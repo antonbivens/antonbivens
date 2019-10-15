@@ -1,0 +1,220 @@
+header {
+    width: 100%;
+    height: 50px;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    background-color: #557587;
+    -webkit-transition: height 0.3s;
+    -moz-transition: height 0.3s;
+    -ms-transition: height 0.3s;
+    -o-transition: height 0.3s;
+    transition: height 0.3s;
+}
+
+header h1#logo {
+    display: inline-block;
+	  height: 50px;
+    line-height: 20px;
+    float: left;
+    font-family: "Lancelot", sans-serif;
+    font-size: 40px;
+    color: black;
+    font-weight: bold;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+header nav {
+    display: inline-block;
+    float: right;
+}
+
+header nav a {
+    line-height: 50px;
+    margin-left: 50px;
+    color: black;
+		font-family: "Lancelot";
+    font-weight: 700;
+    font-size: 18px;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+header nav a:hover {
+    color: white;
+}
+
+header.smaller {
+    height: 75px;
+}
+header.smaller h1#logo {
+    width: 150px;
+    height: 75px;
+    line-height: 75px;
+    font-size: 30px;
+}
+header.smaller nav a {
+    line-height: 75px;
+}
+
+@media all and (max-width: 660px) {
+    header h1#logo {
+        display: block;
+        float: none;
+        margin: 0 auto;
+        height: 100px;
+        line-height: 100px;
+        text-align: center;
+    }
+	
+    header nav {
+				display: block;
+        float: none;
+        height: 50px;
+        text-align: center;
+        margin: 0 auto;
+    }
+	
+    header nav a {
+        line-height: 50px;
+        margin: 0 10px;
+    }
+    header.smaller {
+        height: 75px;
+    }
+    header.smaller h1#logo {
+        height: 40px;
+        line-height: 40px;
+        font-size: 30px;
+    }
+    header.smaller nav {
+        height: 35px;
+    }
+    header.smaller nav a {
+        line-height: 35px;
+    }
+}
+
+body {
+	font-family: Lancelot;
+	width: 100%;
+}
+
+#home .parallax {
+    /* The image used */
+    background-image: url("https://images.unsplash.com/photo-1414690165279-49ab0a9a7e66?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&s=f78f38d39671beb86d48ea1cd4bae878");
+	
+	
+	  /* Set a specific height */
+    min-height: 750px; 
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.box1 {
+		background: #2B547E;
+		color: #fff;
+		width: 500px;
+		height: 200px;
+		/* for IE */
+		filter: alpha(opacity=10);
+ 		/* CSS3 standard */
+ 		opacity: 0.6;
+		text-align: center;
+		position: absolute; left: 550px; top: 150px;
+		margin: auto;
+		padding-top: 20px;
+		padding-bottom: 20px;
+		 
+}
+
+#about .parallax {
+    /* The image used */
+    background-image: url("https://images.unsplash.com/photo-1560393256-d9d37e63088f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80");
+
+    /* Set a specific height */
+    min-height: 700px; 
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.summary {
+		background: #000;
+		color: #fff;
+		width: 900px;
+		height: 510px;
+		/* for IE */
+		filter: alpha(opacity=10);
+ 		/* CSS3 standard */
+ 		opacity: 0.5;
+		text-align: center;
+		position: absolute; left: 325px; top: 800px;
+		margin: auto;
+		padding-top: 10px;
+		padding-bottom: 10px;
+		font-size: 25px;
+			
+}
+
+#portfolio .parallax {
+    /* The image used */
+    background-image: url("https://images.unsplash.com/photo-1545665277-5937489579f2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80");
+
+    /* Set a specific height */
+    min-height: 700px; 
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+		
+}
+
+.size {
+  height: 230px;
+  width: 300px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+	border:2px solid #800000;
+	border-radius: 5px;
+		
+}
+
+ .caption {
+    font-size: 20px;
+    color: white; 
+    text-align: center;
+    background-color: #800000;
+    width: 300px;
+	 	border-radius: 5px;
+}
+
+#portfolio a {
+		margin: auto;
+		
+}
+
+/* Turn off parallax scrolling for tablets and phones. Increase the pixels if needed */
+@media only screen and (max-device-width: 1024px) and (min-device-width: 700px) {
+.parallax {
+        background-attachment: scroll;
+    }
